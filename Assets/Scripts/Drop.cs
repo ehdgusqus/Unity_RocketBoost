@@ -10,7 +10,7 @@ public class Drop : MonoBehaviour
     {
         if (gameObject != null)
         {
-            Debug.Log("gameObject.SetActive(false)");
+            // Debug.Log("gameObject.SetActive(false)");
             gameObject.SetActive(false);    
         }
     }
