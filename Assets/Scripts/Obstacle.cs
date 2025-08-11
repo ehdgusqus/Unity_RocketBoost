@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Scene 3
+// Obstacle Object Script
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] private bool isMovingUpwards;      // true면 위로, false면 아래로 이동 

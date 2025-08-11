@@ -1,6 +1,7 @@
 using UnityEngine;
 
-// Drop_Rock Variant 스크립트
+// Scene 2
+// Drop_Rock Variant Script
 public class Drop : MonoBehaviour
 {
     [SerializeField] private float customGravity = -30f;
@@ -8,8 +9,8 @@ public class Drop : MonoBehaviour
     Rigidbody rb;
 
     void Awake()
-    {   
-        // 만약 돌멩이가 활성화 되어 있다면 비활성화
+    {
+        // 만약 바위가 활성화 되어 있다면 비활성화
         if (gameObject != null)
         {
             // Debug.Log("gameObject.SetActive(false)");

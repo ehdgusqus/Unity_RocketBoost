@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-// Player Rocket 스크립트
+// Player Rocket Script
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] private float levelLoadDelay = 2f; // 다음 레벨로 넘어갈 때 delay 시간 설정
@@ -107,7 +107,7 @@ public class CollisionHandler : MonoBehaviour
         /*
         SceneManager.GetActiveScene(): 현재 활성화 되어 있는(플레이어가 보고 있는) 씬을 가져온다.
         .buildIndex: 현재 씬의 빌드 인덱스 번호를 가져온다.
-        File -> Build Profiles에서 전체 인덱스 확인
+        File -> Build Profiles에서 Scene 전체 인덱스 확인 가능.
         */
         int currentScene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentScene);
