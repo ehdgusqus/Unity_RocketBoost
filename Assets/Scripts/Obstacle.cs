@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    [SerializeField] private bool isMovingUpwards; // true면 위로, false면 아래로 이동 
-    [SerializeField] private float moveDistance = 90f;
-    [SerializeField] private float moveSpeed = 20f;
+    [SerializeField] private bool isMovingUpwards;      // true면 위로, false면 아래로 이동 
+    [SerializeField] private float moveDistance = 90f;  // 이동 거리
+    [SerializeField] private float moveSpeed = 20f;     // 이동 속도
 
     private Vector3 startPosition;
 
