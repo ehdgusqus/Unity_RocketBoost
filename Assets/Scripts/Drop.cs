@@ -27,10 +27,8 @@ public class Drop : MonoBehaviour
         mr.enabled = true;      // MeshRenderer 활성화 -> Inspector에서 Drop_Rock MeshRenderer가 비활성화 되어 있음
     }
 
-    /*
-    FixedUpdate()를 쓰는 이유
-    FixedUpdate()와 Update() 비교
-    */
+    // 유니티 물리 엔진(Rigidbody)를 사용했기 때문에 FixedUpdate() 사용
+    // FixedUpdate()의 호출 빈도와 유니티 물리 엔진의 업데이트 빈도는 일치.
     void FixedUpdate()
     {
         // AddFore(Vector3 force, ForceMode mode) -> Rigidbody component에 힘을 가하는 데 사용

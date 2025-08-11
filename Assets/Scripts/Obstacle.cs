@@ -20,8 +20,11 @@ public class Obstacle : MonoBehaviour
         MoveUpDown();
     }
 
+    // Object를 y축 기준으로 왕복해서 움직이게 하는 메서드
     void MoveUpDown()
     {
+        // Mathf.PingPong(t, length): 0에서 length, length에서 0으로 왕복으로 t 시간만큼 움직인다.
+
         float yOffset = Mathf.PingPong(Time.time * moveSpeed, moveDistance);
 
         Vector3 direction = (isMovingUpwards) ? Vector3.up : Vector3.down;
