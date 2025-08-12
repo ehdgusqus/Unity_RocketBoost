@@ -36,3 +36,4 @@ public class Drop : MonoBehaviour
         rb.AddForce(Vector3.up * customGravity, ForceMode.Acceleration);
     }
 }
+
