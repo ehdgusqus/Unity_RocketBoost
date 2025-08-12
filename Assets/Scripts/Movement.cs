@@ -32,6 +32,7 @@ public class Movement : MonoBehaviour
     void OnDisable()
     {
         thrust.Disable();
+        rotation.Disable();
     }
 
     void FixedUpdate()
